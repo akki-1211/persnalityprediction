@@ -22,7 +22,7 @@
     </style>
     <link rel="stylesheet" href="css\mainstyle.css">
 </head>
-<body onload="addtable()">
+<body>
     <nav class="menu">
         <header>Close<span>X</span></header>
         <ol>
@@ -90,16 +90,5 @@
     </form>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="js/navbar.js"></script>
-<script>
-    function addtable(e){
-    confirm("onload");
-    var table = sessionStorage.getItem("table",table);
-    var tableid = document.getElementById("table")
-    if (table != undefined)
-    {
-        tableid.appendChild(table);
-    }
-}
-</script>
 </body>
 </html>
