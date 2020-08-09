@@ -1,54 +1,43 @@
 <!DOCTYPE html>
 <head>
     <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css\aptqs.css">
+    <link rel="stylesheet" href="css\mainstyle.css">
 </head>
 <body>
-    <form action="#" method="post">
-    <div>
-        <a href="aptq.html">Aptitude Questions</a>&nbsp;&nbsp;
-        <a href="perq.html">Persnality Questions</a>&nbsp;&nbsp;
-        <a href="#">Job Details</a>&nbsp;&nbsp;
-        <a href="index.html">Logout</a>
-      </div>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="addjobdetails.html">Add Job Details</a><br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="requirementdetails.html">Add Requirement details</a><br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="uploadcv.html">Upload prefered cvs</a>
-      <br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="viewaptq.html">Show Aptitude Questions</a><br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="viewperq.html">Show Persnality Questions</a><br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="viewjobdetails.html">Show Job Details</a><br>
-
+    <nav class="menu">
+        <header>Close<span>X</span></header>
+        <ol>
+            <li class="menu-item"><a href="aptq.html">Aptitude Questions</a></li>
+            <li class="menu-item"><a href="#">Personality Questions</a></li>
+            <li class="menu-item">
+                <a href="#0">Job Details</a>
+                <ol class="sub-menu">
+                    <li class="menu-item"><a href="addjobdetails.html">AddJobDetails</a></li>
+                    <li class="menu-item"><a href="requirementdetails.html">AddRequirementdetails</a></li>
+                    <li class="menu-item"><a href="uploadcv.html">Uploadpreferedcvs</a></li>
+                </ol>
+            </li>
+            <li class="menu-item">
+                <a href="#0">View</a>
+                <ol class="sub-menu">
+                    <li class="menu-item"><a href="viewaptq.html">ShowAptitudeQuestions</a></li>
+                    <li class="menu-item"><a href="viewperq.html">ShowPersnalityQuestions</a></li>
+                    <li class="menu-item"><a href="viewjobdetails.html">ShowJobDetails</a></li>
+                </ol>
+            </li>
+            <li class="menu-item"><a href="index.html">Logout</a></li>
+        </ol>
+        <footer><button aria-label="Toggle Menu">Toggle</button></footer>
+    </nav> 
+    <form class="box" method="get">
     <h1 align="center">Persnality Questions</h1>
     <div align="center">
         <div align="center">
-            <label>Questions:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="que" rows="5" cols="50" required placeholder="Write your question here"></textarea>
-        </div><br><br>
-        <div align="center">
-            <label>Openness to experience:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="sel1" required>
+            <label>Questions:</label><textarea name="que" rows="5" cols="50" required placeholder="Write your question here"></textarea>
+        <div align="center"><br>
+            <label>Openness to experience:</label><select name="sel1" required>
                 <option value="none">--select--</option>
                 <option value="Agree">Agree</option>
                 <option value="Disagree">Disagree</option>
@@ -56,9 +45,8 @@
                 <option value="Strongly disagree">Strongly disagree</option>
                 <option value="none of above">Neither agree nor disagree</option>
             </select>
-            <div align="center">
-            </div><br><br>
-            <label>Conscientiousness:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="sel2" required>
+            <div align="center"><br>
+            <label>Conscientiousness:</label><select name="sel2" required>
                 <option value="none">--select--</option>
                 <option value="Agree">Agree</option>
                 <option value="Disagree">Disagree</option>
@@ -66,9 +54,9 @@
                 <option value="Strongly disagree">Strongly disagree</option>
                 <option value="none of above">Neither agree nor disagree</option>
             </select>
-        </div><br><br>    
-        <div align="center">
-            <label>Extraversion:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="sel3" required>
+        </div>
+        <div align="center"><br>
+            <label>Extraversion:</label><select name="sel3" required>
                 <option value="none">--select--</option>
                 <option value="Agree">Agree</option>
                 <option value="Disagree">Disagree</option>
@@ -76,9 +64,9 @@
                 <option value="Strongly disagree">Strongly disagree</option>
                 <option value="none of above">Neither agree nor disagree</option>
             </select>
-        </div><br><br>
-        <div align="center">
-            <label>Agreeableness:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="sel4" required>
+        </div>
+        <div align="center"><br>
+            <label>Agreeableness:</label><select name="sel4" required>
                 <option value="none">--select--</option>
                 <option value="Agree">Agree</option>
                 <option value="Disagree">Disagree</option>
@@ -86,9 +74,9 @@
                 <option value="Strongly disagree">Strongly disagree</option>
                 <option value="none of above">Neither agree nor disagree</option>
             </select>
-        </div><br><br><br>
-        <div align="center">
-            <label>Neuroticism:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="sel4" required>
+        </div>
+        <div align="center"><br>
+            <label>Neuroticism:</label><select name="sel4" required>
                 <option value="none">--select--</option>
                 <option value="Agree">Agree</option>
                 <option value="Disagree">Disagree</option>
@@ -96,11 +84,13 @@
                 <option value="Strongly disagree">Strongly disagree</option>
                 <option value="none of above">Neither agree nor disagree</option>
             </select>
-        </div><br><br><br>
+        </div>
         <div align="center">
             <input type="submit" name="add" value="Add">
         </div>
     </form>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="js/navbar.js"></script>
     </body>
     
     </html>    

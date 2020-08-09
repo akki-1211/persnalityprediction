@@ -1,48 +1,54 @@
 <!DOCTYPE html>
 <head>
     <title></title>
+    <link rel="stylesheet" href="css\aptqs.css">
+    <style>
+        .box{
+            width: 900px;
+            top: 50%;
+            left: 60%;
+        }
+        td{
+            color: beige;
+        }
+        td a{
+            text-decoration: none;
+            color: aliceblue;
+            font-size: large;
+        }
+        td a:hover{
+            color: aqua;
+        }
+    </style>
+    <link rel="stylesheet" href="css\mainstyle.css">
 </head>
 <body>
-    <form action="#" method="post">
-        <div>
-            <a href="aptq.html">Aptitude Questions</a>&nbsp;&nbsp;
-            <a href="perq.html">Persnality Questions</a>&nbsp;&nbsp;
-            <a href="#">Job Details</a>&nbsp;&nbsp;
-            <a href="index.html">Logout</a>
-        </div>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="addjobdetails.html">Add Job Details</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="requirementdetails.html">Add Requirement details</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="uploadcv.html">Upload prefered cvs</a>
-        <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="viewaptq.html">Show Aptitude Questions</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="viewperq.html">Show Personality Questions</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="viewjobdetails.html">Show Job Details</a>
-
-
+    <nav class="menu">
+        <header>Close<span>X</span></header>
+        <ol>
+            <li class="menu-item"><a href="aptq.html">Aptitude Questions</a></li>
+            <li class="menu-item"><a href="perq.html">Persnality Questions</a></li>
+            <li class="menu-item">
+                <a href="#0">Job Details</a>
+                <ol class="sub-menu">
+                    <li class="menu-item"><a href="addjobdetails.html">AddJobDetails</a></li>
+                    <li class="menu-item"><a href="#">AddRequirementdetails</a></li>
+                    <li class="menu-item"><a href="uploadcv.html">Uploadpreferedcvs</a></li>
+                </ol>
+            </li>
+            <li class="menu-item">
+                <a href="#0">View</a>
+                <ol class="sub-menu">
+                    <li class="menu-item"><a href="viewaptq.html">ShowAptitudeQuestions</a></li>
+                    <li class="menu-item"><a href="viewperq.html">ShowPersnalityQuestions</a></li>
+                    <li class="menu-item"><a href="viewjobdetails.html">ShowJobDetails</a></li>
+                </ol>
+            </li>
+            <li class="menu-item"><a href="index.html">Logout</a></li>
+        </ol>
+        <footer><button aria-label="Toggle Menu">Toggle</button></footer>
+    </nav>
+    <form action="#" class="box" method="post">
         <h1 align="center">Personality Questions</h1>
         <table border="1" align="center">
             <tr>
@@ -82,5 +88,7 @@
             </tr>
         </table>
     </form>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="js/navbar.js"></script>
 </body>
 </html>

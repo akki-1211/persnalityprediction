@@ -1,70 +1,67 @@
 <!DOCTYPE html>
 <head>
     <title></title>
+    <link rel="stylesheet" href="css\aptqs.css">
+    <style>
+        .box{
+            top: 50%;
+            left: 50%;
+        }
+    </style>
+    <link rel="stylesheet" href="css\mainstyle.css">
 </head>
 <body>
-    <form action="#" method="post">
-        <div>
-            <a href="aptq.html">Aptitude Questions</a>&nbsp;&nbsp;
-            <a href="perq.html">Persnality Questions</a>&nbsp;&nbsp;
-            <a href="#">Job Details</a>&nbsp;&nbsp;
-            <a href="index.html">Logout</a>
-        </div>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="addjobdetails.html">Add Job Details</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="requirementdetails.html">Add Requirement details</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="uploadcv.html">Upload prefered cvs</a>
-        <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="viewaptq.html">Show Aptitude Questions</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="viewperq.html">Show Persnality Questions</a><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="viewjobdetails.html">Show Job Details</a><br>
-
+    <nav class="menu">
+        <header>Close<span>X</span></header>
+        <ol>
+            <li class="menu-item"><a href="aptq.html">Aptitude Questions</a></li>
+            <li class="menu-item"><a href="perq.html">Persnality Questions</a></li>
+            <li class="menu-item">
+                <a href="#0">Job Details</a>
+                <ol class="sub-menu">
+                    <li class="menu-item"><a href="addjobdetails.html">AddJobDetails</a></li>
+                    <li class="menu-item"><a href="#">AddRequirementdetails</a></li>
+                    <li class="menu-item"><a href="uploadcv.html">Uploadpreferedcvs</a></li>
+                </ol>
+            </li>
+            <li class="menu-item">
+                <a href="#0">View</a>
+                <ol class="sub-menu">
+                    <li class="menu-item"><a href="viewaptq.html">ShowAptitudeQuestions</a></li>
+                    <li class="menu-item"><a href="viewperq.html">ShowPersnalityQuestions</a></li>
+                    <li class="menu-item"><a href="viewjobdetails.html">ShowJobDetails</a></li>
+                </ol>
+            </li>
+            <li class="menu-item"><a href="index.html">Logout</a></li>
+        </ol>
+        <footer><button aria-label="Toggle Menu">Toggle</button></footer>
+    </nav>
+    <form action="#" class="box" method="post">
         <h1 align="center">Job Requirement</h1>
         <div align="center">
-            <label>Job ID:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="jid" required>
+            <label>Job ID:</label><br><select name="jid" required>
                 <option value="none">--select--</option>
                 <option value="programming">id1 from database</option>
                 <option value="maths">id2 from database</option>
                 <option value="English">id3 from database</option>
             </select><br>
-            <p> Job details of selected id from database</p>
-        </div><br><br>
+            <h1> Job details of selected id from database</h1><br><br><br><br>
+        </div>
         <div align="center">
-            <label>Experience:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="exp" required>
-        </div><br><br>
+            <label>Experience:</label><input type="text" name="exp" required>
+        </div>
         <div align="center">
-            <label>Qualification:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="qua" required>
-        </div><br><br>    
+            <label>Qualification:</label><input type="text" name="qua" required>
+        </div>
         <div align="center">
-            <label>Key Skills:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="keyskill" required>
-        </div><br><br>
+            <label>Key Skills:</label><input type="text" name="keyskill" required>
+        </div>
         <div align="center">
             <input type="submit" name="add" value="Add">
         </div>
     </form>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="js/navbar.js"></script>
 </body>
 </html>
     
