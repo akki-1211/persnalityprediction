@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <head>
+    <!-- <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <!-- <script src="js/bootstrap_js/bootstrap.min.js"></script> -->
     <title></title>
-    <link rel="stylesheet" href="css\aptqs.css">
+     <link rel="stylesheet" href="css\aptqs.css">
     <style>
         .box{
             width: 900px;
@@ -21,8 +25,9 @@
         }
     </style>
     <link rel="stylesheet" href="css\mainstyle.css">
+    
 </head>
-<body>
+<body onload="addvalue()">
     <nav class="menu">
         <header>Close<span>X</span></header>
         <ol>
@@ -50,7 +55,7 @@
     </nav>
     <form action="#" class="box" method="post" id="form1">
         <h1 align="center">Aptitude Questions</h1>
-        <table id="table" border="1" align="center">
+        <table class="table">
             <tr>
                 <td>1</td>
                 <td colspan="10"> 	
@@ -90,5 +95,6 @@
     </form>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="js/navbar.js"></script>
+<script src="js/addque.js"></script>
 </body>
 </html>
